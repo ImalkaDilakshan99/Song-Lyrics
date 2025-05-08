@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class LyricsSync {
+public class EdSheeranPerfect {
 
     // Inner class to store each lyric line with its time in seconds
     static class LyricLine {
@@ -18,11 +18,18 @@ public class LyricsSync {
 
         // Define lyrics with time in seconds (e.g., 1 minute = 60.0 seconds)
         List<LyricLine> lyrics = new ArrayList<>();
-        lyrics.add(new LyricLine(0.0, "Intro music..."));
-        lyrics.add(new LyricLine(5.0, "This is the first line"));
-        lyrics.add(new LyricLine(10.0, "Second line of the song"));
-        lyrics.add(new LyricLine(15.0, "Third line of the song"));
-        lyrics.add(new LyricLine(20.0, "Chorus begins..."));
+        lyrics.add(new LyricLine(0.0, "Baby, I'm..."));
+        lyrics.add(new LyricLine(5.0, "Dancing in the dark"));
+        lyrics.add(new LyricLine(9.0, "With you between my arms"));
+        lyrics.add(new LyricLine(13.0, "Barefoot on the grass"));
+        lyrics.add(new LyricLine(17.0, "Listening to our favourite song"));
+        lyrics.add(new LyricLine(20.0, "I have faith in what I see"));
+        lyrics.add(new LyricLine(23.0, "Now I know I have met an angel in person"));
+        lyrics.add(new LyricLine(30.0, "And she looks perfect"));
+        lyrics.add(new LyricLine(33.0, "I don't deserve this"));
+        lyrics.add(new LyricLine(37.0, "You look perfect tonight"));
+        
+        
 
         long startTime = System.currentTimeMillis();
 
@@ -43,7 +50,7 @@ public class LyricsSync {
                 System.out.print(c);
                 System.out.flush();
                 try {
-                    TimeUnit.MILLISECONDS.sleep(50);
+                    TimeUnit.MILLISECONDS.sleep(80);
                 } catch (InterruptedException e) {
                     System.out.println("Interrupted while animating");
                 }
